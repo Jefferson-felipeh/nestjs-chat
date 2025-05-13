@@ -18,15 +18,15 @@ export class ChatGateway implements OnGatewayInit,OnGatewayConnection,OnGatewayD
   @WebSocketServer() serve: Server;
 
   afterInit(server: Server) {
-      console.log('WebSocket server initialized');
+      console.log('WebSocket foi inicializado!');
   }
 
-  handleConnection(client: Socket, ...args: any[]) {
-      console.log(`Client connected: ${client.id}`);
+  handleConnection(client: Socket) {
+      console.log(`Cliente conectado: ${client.id}`);
   }
 
   handleDisconnect(client: Socket) {
-      console.log(`Client disconnected: ${client.id}`);
+      console.log(`Cliente desconectado: ${client.id}`);
   }
 
   @SubscribeMessage('message')

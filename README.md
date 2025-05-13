@@ -1,5 +1,9 @@
 #CRIAÇÃO DE UM CHAT EM TEMPO REAL UTILIZANDO WEBSOCKETS_
 
+  //Cada vez que o cliente entra no endpoint da aplicação, o websocket capta esse evento e emite informações para o sever;
+  //Assim que o cliente fecha a aba, essa conexão do cliente com o servidor é fechada;
+  //Varios clientes podem acessar simultaneamente a aplicação;
+
 Criação de um webSocket básico para a construção de um chat simples em tempo real_
 
 Pre-Requisitos:
